@@ -4,12 +4,12 @@ import { useInView } from "react-intersection-observer";
 
 const boxVariant = {
   visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, x: 1000, scale: 0.5 }
+  hidden: { opacity: 0, x: 100, scale: 0.5 }
 };
 
 const dateVariant = {
   visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, x: -1000, scale: 0.5 }
+  hidden: { opacity: 0, x: -100, scale: 0.5 }
 };
 interface TimelineCardProps  {
   title: string
@@ -38,7 +38,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({title, date, duration, descr
     initial="hidden"
     animate={control}
   >
-    <time className="absolute top-24 -left-64 text-lg font-normal leading-none w-48 text-right text-white">{date}</time>
+    <time className="absolute -top-10  md:top-24 md:-left-64 text-lg font-normal leading-none w-48 text-right text-white">{date}</time>
 
   </motion.div>
     <motion.div
