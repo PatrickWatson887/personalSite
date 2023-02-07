@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Timeline from "../components/timeline";
 import Image from "next/image";
 import SkillsGrid from "../components/skillsGrid";
+import ContactMe from "../components/contactMe";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         
         <Timeline/>
         <SkillsGrid />
+        <ContactMe />
         <div className="h-64"></div>
       </main>
     </>
