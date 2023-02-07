@@ -14,8 +14,8 @@ const SkillsGrid: React.FC = () => {
     <>
     <h1 className="text-center text-white text-3xl mt-16">Main Skills</h1>
     <div className="grid grid-cols-3 gap-y-28 bg-white rounded-md p-10">
-      {skills.map((skill) => (
-        <SkillsCard {...skill}/>
+      {skills.map((skill, index) => (
+        <SkillsCard {...skill} key={index}/>
       ))}
     </div>
     </>

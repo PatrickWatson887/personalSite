@@ -23,9 +23,9 @@ const TimelineCard: React.FC<TimelineCardProps> = ({title, date, duration, descr
 
   useEffect(() => {
     if (inView) {
-      control.start("visible");
+      void control.start("visible");
     } else {
-      control.start("hidden");
+      void control.start("hidden");
     }
   }, [control, inView]);
 

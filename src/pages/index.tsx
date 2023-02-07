@@ -1,6 +1,3 @@
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 import Head from "next/head";
 import { NextPage } from "next";
 import Timeline from "../components/timeline";

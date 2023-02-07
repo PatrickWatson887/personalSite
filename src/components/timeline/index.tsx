@@ -16,8 +16,8 @@ const Timeline: React.FC = () => {
     <>
     <h1 className="text-center text-white text-3xl mt-16">My Coding Journey</h1>
     <ol className="relative border-l w-1/2 border-gray-200 dark:border-gray-700">                  
-      {timeline.map((time) => (
-        <TimelineCard {...time} />
+      {timeline.map((time, index) => (
+        <TimelineCard {...time} key={index} />
       ))}
   </ol>
   </>

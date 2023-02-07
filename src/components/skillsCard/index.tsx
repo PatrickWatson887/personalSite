@@ -20,9 +20,9 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ title, description, src }) => {
 
   useEffect(() => {
     if (inView) {
-      control.start("visible");
+      void control.start("visible")
     } else {
-      control.start("hidden");
+      void control.start("hidden")
     }
   }, [control, inView]);
 
